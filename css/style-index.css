@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none
+}
+body{
+    background-image: radial-gradient(circle at 50% 50%, #27393d 0, #232f31 16.67%, #1d2223 33.33%, #141212 50%, #070000 66.67%, #000000 83.33%, #000000 100%);
+}
+  .head{
+  width: 100%;
+  height: auto;
+  background: #8a3636;
+  display:flex;
+  justify-content: space-between;
+  padding:10px;
+  margin-bottom: 20px;
+  }
+
