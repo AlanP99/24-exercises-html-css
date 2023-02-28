@@ -8,11 +8,17 @@ body{
 }
   .head{
   width: 100%;
-  height: auto;
+  height: 80px;
   background: #8a3636;
   display:flex;
   justify-content: space-between;
   padding:10px;
   margin-bottom: 20px;
   }
+a{
+color:white;
+margin-left:20px;
+font-family: arial, cursive;
+font-size: 12px;
+}
 
