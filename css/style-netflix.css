@@ -3,24 +3,29 @@
 	margin:0px;
 	padding:0px;
 	text-decoration:none;
+	box-sizing: border-box;
 }
-body{
+.content{
 	width:100vw;
 	height:100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets-images/net-fondo.jpg');
 	background-position:center;
 	background-size:cover;
 	background-repeat: no-repeat;
+	
 }
 .container{
-	width:100%;
-	height:auto;
+	width:100vw;
+	height:100vh;
 	display:flex;
 	flex-direction:column;
 	gap:80px;
 }
 .navigation{
-	width:100%;
+	width:100vw;
 	height:100px;
 	display:flex;
 	align-items:center;
@@ -38,10 +43,10 @@ body{
 	width:250px;
 	height: 30px;
 	outline:none;
-	border: solid 1px #fff;
 	border-radius:2px;
 	color:#fff;	
 	background-color:transparent;
+	border: solid 1px #fff;
 }
 .options a{
 	color:#fff;
@@ -62,7 +67,7 @@ body{
 
 .content-text {
 	width:600px;
-	height:250px;
+	height:auto;
 	color:#fff;	
 	margin-left:5rem;
 }
@@ -89,7 +94,6 @@ body{
 	background-position-y:center;
 	background-clip: text;
 	-webkit-background-clip: text;
-	
 }
 .text-info{
 	width:280px;
@@ -114,7 +118,6 @@ body{
 	border-radius:2px;
 	height:25px;
 	font-size:14px;
-
 }
 .play{
 	background-color:red;
@@ -138,33 +141,39 @@ body{
 }
 .button-trailer h3{
 	margin:25px 20px 0px 0px;	
-
 }
 
 @media screen and (max-width: 600px) {
 
 .navigation{
-	justify-content:buttom;
+	width:100vw;
 	flex-direction:column;
 }
 .navigation img{
 	margin:0px;
 }
+.buscador{
+	width:90vw;
+	margin:16px 0px 0px 10px;
+	
+}
 .buscador input{
-	width:550px;
-	margin-top:.8rem;
-	margin-left:3rem;
+	width:100%;
+	display:block;
 }
 .search {
-	left:1.9rem;
-	margin-top:1.3rem;
+	left:3rem;
+	margin-top:.5rem;
 }
+.content-text{
+	width:100vw;
+	margin-left:1rem;
 
+}
 .text-movie{
 	width:500px;
 	height:60px;
 	font-size:60px;
-	
 }
 .background-text{
 	margin-bottom:2rem;
@@ -176,55 +185,45 @@ body{
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 414px) {
 
+.navigation{
+	width:100vw;
+	flex-direction:column;
+}
 .navigation img{
 	margin:0px;
 }
-.buscador input{
-	width:240px;
-	margin-top:.8rem;
-	margin-right:2.5rem;
-}
-.search {
-	left:1.7rem;
-	margin-top:1.3rem;
-}
-
-.text-movie{
-	width:250px;
-	height:60px;
-	font-size:40px;
+.buscador{
+	width:90vw;
+	margin:16px 0px 0px 10px;
 	
 }
-.background-text{
-	margin-bottom:1rem;
-}
-.description{
+.buscador input{
 	width:100%;
-
+	display:block;
 }
-.description p{		
-	font-size:10px;
-
-}
-.options a{
-	font-size:12px;
-	margin:4px;
-}
-.options{
-	margin-right:3rem;
-
+.search {
+	left:2.3rem;
+	margin-top:.5rem;
 }
 .content-text{
-	width:250px;
-	position:relative;
-	margin-left:.2rem;
+	width:100vw;
+	margin:10px;
 }
-.text-info{
-	width:250px;
-	justify-content:space-around;
+.text-movie{
+	width:100%;
+	height:60px;
+	font-size:50px;
 }
+.background-text{
+	margin-bottom:2rem;
+}
+.description{
+	width:90%;
+}
+
+
 }
 
 
