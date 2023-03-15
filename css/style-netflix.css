@@ -4,12 +4,16 @@
 	padding:0px;
 	text-decoration:none;
 }
-.container{
-	width:100%;
+body{
+	width:100vw;
 	height:100vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets-images/net-fondo.jpg');
 	background-position:center;
 	background-size:cover;
+}
+.container{
+	width:100%;
+	height:auto;
 	display:flex;
 	flex-direction:column;
 	gap:80px;
@@ -138,67 +142,35 @@
 
 @media screen and (max-width: 600px) {
 
-.container{
-	width:100%;
-	max-width:500px;
-	height:100vh;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets-images/net-fondo.jpg');
-	background-position:center;
-	background-size:cover;
-	display:flex;
-	flex-direction:column;
-
-}
-
 .navigation{
-	width:500px;
-	justify-content:center;
-	align-items:center;
+	justify-content:buttom;
 	flex-direction:column;
 }
 .navigation img{
-	width:120px;
-	height:80px;
+	margin:0px;
 }
 .buscador input{
-	width:410px;
-	height: 30px;
-	outline:none;
-	border: solid 1px #fff;
-	border-radius:2px;
-	color:#fff;	
-	background-color:transparent;
+	width:550px;
 	margin-top:.8rem;
-	
-}
-.options a{
-	color:#fff;
-	font-family: 'Roboto', sans-serif;
+	margin-left:3rem;
 }
 .search {
-	position:absolute;
-	left:1.8rem;
-	color:#fff;
-	font-size:17px;
+	left:1.9rem;
 	margin-top:1.3rem;
 }
 
 .text-movie{
 	width:500px;
-	height:100px;
-	font-family: 'Lora', serif;
-	color: rgb(255,255,255,.8);
-	font-size:80px;
-	text-align:center;
-	line-height:5.2rem;
-	background-image: url('../assets-images/humo1.jpeg');
-	background-position-y:center;
-	background-clip: text;
-	-webkit-background-clip: text;
+	height:60px;
+	font-size:60px;
 	
 }
-
-
+.background-text{
+	margin-bottom:2rem;
+}
+.description{
+	width:500px;
+}
 
 }
 
