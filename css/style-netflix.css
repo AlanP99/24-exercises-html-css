@@ -10,6 +10,7 @@ body{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets-images/net-fondo.jpg');
 	background-position:center;
 	background-size:cover;
+	background-repeat: no-repeat;
 }
 .container{
 	width:100%;
@@ -173,6 +174,60 @@ body{
 }
 
 }
+
+
+@media screen and (max-width: 320px) {
+
+.navigation img{
+	margin:0px;
+}
+.buscador input{
+	width:240px;
+	margin-top:.8rem;
+	margin-right:2.5rem;
+}
+.search {
+	left:1.7rem;
+	margin-top:1.3rem;
+}
+
+.text-movie{
+	width:250px;
+	height:60px;
+	font-size:40px;
+	
+}
+.background-text{
+	margin-bottom:1rem;
+}
+.description{
+	width:100%;
+
+}
+.description p{		
+	font-size:10px;
+
+}
+.options a{
+	font-size:12px;
+	margin:4px;
+}
+.options{
+	margin-right:3rem;
+
+}
+.content-text{
+	width:250px;
+	position:relative;
+	margin-left:.2rem;
+}
+.text-info{
+	width:250px;
+	justify-content:space-around;
+}
+}
+
+
 
 
 
