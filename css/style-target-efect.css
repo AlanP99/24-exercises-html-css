@@ -1,0 +1,139 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#fff;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color:#0d0f36;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    width: 1100px;
+    height: auto;
+    background-color:#294380;
+    border: none;
+    border-radius: 1rem;
+    padding: 20px 0px;
+
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.targets{
+    width: 280px;
+    height: 280px;
+    border:none;
+    border-radius: .6rem;
+    background-color: rgb(23, 24, 97);  
+   /* padding: 5px 10px;*/
+    position: relative;
+    overflow: hidden;
+}
+
+.icon-1{
+    background-color: #82e68f;
+}
+.icon-2{
+    background-color: rgb(221, 52, 52);
+}
+.icon-3{
+    background-color:#9cd1b8;
+}
+.icon-4{
+    background-color: rgb(212, 210, 49);
+}
+.icon-5{
+    background-color: #a15d8b;
+}
+.icon-6{
+    background-color: rgb(218, 104, 60);
+}
+
+.span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.span img{    
+    width: 80px;
+    height: 80px;
+}
+
+.span i{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    top:6.5rem;
+    transform: scale(0,0);
+}
+
+.container h2{
+    text-align: center;
+
+    
+}
+.container p{
+    text-align: justify;
+    padding: 5px 20px;
+    font-size: 13px;
+}
+.targets:hover .span i{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+    margin-top: 5px;
+}
+.targets:hover .container{
+    transform: scale(1,1);
+    transition: all 1.2s;
+}
+
+.targets:hover .span img{    
+    width: 60px;
+    height: 60px;
+    transition: all 1s;   
+}
+body:hover .span i{
+	transition:all 1s;
+}
+body:hover .span img{
+	transition:all 0.8s;
+}
+
+body:hover .container{
+	transition:all 0.8s;
+    
+}
+
+
+
+
+
