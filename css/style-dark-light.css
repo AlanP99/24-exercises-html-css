@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.content{
+    width: 340px;
+    height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-radius: 5rem;
+    line-height: 1px;
+    border-radius: 50px;
+    background-color: rgb(26, 26, 26);
+    box-shadow: -10px -10px 100px 10px rgb(26, 26, 26);
+    padding: .1rem .1rem;
+    list-style: none;
+
+}
+.content img{
+    width: 100px;
+    height: 100px;
+}
+.content .im-1{
+    position: absolute;
+    opacity: 1;
+    
+}
+.content .im-2{
+    position: absolute;
+    opacity: 0;
+}
+.main input:checked ~ .im-1{
+    transform: translateX(235px) rotate(180deg);
+    transition: all 1.5s;
+    opacity: 0;
+}
+
+
+.main input:checked ~ .im-2{
+    transform: translateX(235px) rotate(180deg);
+    transition: all 1.5s;
+    opacity: 1;
+}
+
+.main input ~ .im-1{
+    transform: translateX(0) rotate(0deg);
+    transition: all 1.5s;
+}
+.main input ~ .im-2{
+    transform: translateX(0) rotate(0deg);
+    transition: all 1.5s;
+}
+
+
+.content input{
+    width: 350px;
+    height: 120px;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+}
+
+main h4{
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+

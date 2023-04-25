@@ -1,0 +1,117 @@
+@import url('https://fonts.cdnfonts.com/css/papyrus');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+.target{
+    width: 400px;
+    height: 550px;
+    border-radius: .5rem;
+    background-image: url(../assets-images/avatar.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    filter: brightness(80%);
+    overflow: hidden;
+    box-shadow: 0 0 .5rem .1rem rgba(56, 56, 56);
+}
+.target-cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: end;
+    position: absolute;
+    top:13rem;
+}
+.target-cont .target-info{
+    width: 100%;
+    background-color: black;
+    padding: 0rem 1.5rem;
+    box-shadow: 0 0 5px 10px rgb(0,0,0, 1);
+}
+span h1, span p{
+    width: auto;
+    color: rgb(54, 192, 192);
+    font-family: 'Papyrus', sans-serif;
+    text-align: left;
+    line-height: 2.2rem;
+}
+
+span h1{
+    font-size: 3rem; 
+}
+span p{
+    font-size: 1rem;  
+}
+
+.details p{
+    color:#fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.details li{
+    display: flex;
+    color: yellow;
+    gap: .7rem;
+    padding: .2rem 0;
+}
+.details .btn{
+    padding: .7rem 0;
+}
+.btn button{
+    padding: .2rem .5rem;
+    color: white;
+    border: none;
+    border-radius: .2rem;
+}
+.btn .btn-1{
+  background-color: rgb(44, 44, 173);  
+}
+
+.btn .btn-2{
+    background-color: brown;
+}
+.hover{
+    color: #fff;
+    text-align: justify;
+    position: relative;
+}
+
+.hover li{
+    display: flex;
+    margin: 0.5rem 0;
+}
+.im{
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgb(117, 117, 117);
+    border-radius: 50%;
+}
+.im img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.target:hover .target-info{
+    transition: 1.5s;
+    transform: translateY(-13rem);
+    position: relative;
+}
+
+@media screen and (max-width:600px){
+    .target{
+        width: 350px;
+    }
+
+}
