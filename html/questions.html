@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-questions.css">
+    <script src="../Javascript/open-card.js"></script>
+    <title>QUESTIONS FREQUENTLY</title>
+</head>
+<body>
+    <main class="container">
+        <h1>PREGUNTAS FRECUENTES</h1>
+         <details class="target tag-1">
+            <summary class="content">
+                <div class="number num-1">
+                    <h2>01</h2>
+                </div>
+                <div class="text">
+                    <h4>¿Como me inscribo?</h4>    
+                </div>
+                <div class="icon">
+                    <p>+</p>
+                </div>
+            </summary>
+            <p class="invisible" id="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fuga architecto totam nesciunt, modi sequi saepe, ullam autem quam, nemo ut dolore! Dignissimos explicabo magni expedita placeat, est voluptates! Ipsum.</p>
+        </details>
+
+         <details class="target tag-2">
+            <summary class="content">
+                <div class="number num-2">
+                    <h2>02</h2>
+                </div>
+                <div class="text">
+                    <h4>¿Como me inscribo?</h4>    
+                </div>
+                <div class="icon" >
+                    <p>+</p>
+                </div>
+            </summary>
+            <p class="invisible" id="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fuga architecto totam nesciunt, modi sequi saepe, ullam autem quam, nemo ut dolore! Dignissimos explicabo magni expedita placeat, est voluptates! Ipsum.</p>
+         </details>
+
+         <details class="target tag-3">
+            <summary class="content">
+                <div class="number num-3">
+                    <h2>03</h2>
+                </div>
+                <div class="text">
+                    <h4>¿Como me inscribo?</h4>    
+                </div>
+                <div class="icon">
+                    <p>+</p>
+                </div>
+            </summary>
+            <p class="invisible" id="3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fuga architecto totam nesciunt, modi sequi saepe, ullam autem quam, nemo ut dolore! Dignissimos explicabo magni expedita placeat, est voluptates! Ipsum.</p>
+         </details>
+
+         <details class="target tag-4">
+            <summary class="content">
+                <div class="number num-4">
+                    <h2>04</h2>
+                </div>
+                <div class="text">
+                    <h4>¿Como me inscribo?</h4>    
+                </div>
+                <div class="icon">
+                    <p>+</p>
+                </div>
+            </summary>
+            <p class="invisible" id="3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fuga architecto totam nesciunt, modi sequi saepe, ullam autem quam, nemo ut dolore! Dignissimos explicabo magni expedita placeat, est voluptates! Ipsum.</p>
+         </details>
+        
+    </main> 
+</body>
+<script>
+    //DETECTAR SI UN EVENTO ESTA ABIERTO Y DARLE ATRIBUTOS MEDIANTE DISEÑO CSS.
+    // SI EL ATRIBUTO ESTA CERRADO, NO SELECCIONAR EL ELEMENTO PADRE, SOLO MANTENER SU DISEÑO ORIGINAL
+    //SIEMPRE Y CUANDO ESTA CONDICION SEA CIERTA.
+    const accordions = document.querySelectorAll('.target')
+
+    accordions.forEach(accordion => {
+        accordion.addEventListener('click', (event) => {
+            event.preventDefault()
+            if(accordion.hasAttribute('open'))
+            {
+                accordion.removeAttribute('open')
+            } else {
+                accordions.forEach(otherAccordion => {
+                    if(otherAccordion.hasAttribute('open')) {
+                        otherAccordion.removeAttribute('open')
+                    }
+                })
+                accordion.setAttribute('open', 'true')
+            }
+        })
+    })
+</script>
+</html> 
+
+
+<!-- <script>
+    DETECTAR SI UN EVENTO ESTA ABIERTO, DE SER ASI CERRARLO Y ABRIR OTRO ELEMENTO PERO MANTENIENDOLO ABIERTO
+    const bloque = document.querySelectorAll('.target')
+    const invisible = document.querySelectorAll('.icon')
+
+    invisible.forEach((cadaicon, i)=>{
+        invisible[i].addEventListener('click',()=>{
+            bloque.forEach((cadadiv , i)=>{
+                bloque[i].classList.remove('activo');
+            }); 
+            bloque[i].classList.add('activo');
+        });
+    });
+
+</script> -->
+    
+
+<!-- 
+
+    <!-- <script>
+        /*=============== ACCORDION ===============*/
+   const accordionItems = document.querySelectorAll('.target')
+   
+   // 1. Selecionar cada item
+   accordionItems.forEach((item) =>{
+       const accordionHeader = item.querySelector('.icon')
+   
+       // 2. Seleccionar cada click del header
+       accordionHeader.addEventListener('click', () =>{
+           // 7. Crear la variable
+           const openItem = document.querySelector('.accordion-open')
+           
+           // 5. Llamar a la funcion toggle item
+           toggleItem(item)
+   
+           // 8. Validar si existe la clase
+           if(openItem && openItem!== item){
+               toggleItem(openItem)
+           }
+       })
+   })
+   
+   // 3. Crear una funcion tipo constante
+   const toggleItem = (item) =>{
+       // 3.1 Crear la variable
+       const accordionContent = item.querySelector('.target .invisible')
+   
+       // 6. Si existe otro elemento que contenga la clase accorion-open que remueva su clase
+       if(item.classList.contains('accordion-open')){
+           accordionContent.removeAttribute('style')
+           item.classList.remove('accordion-open')
+       }else{
+           // 4. Agregar el height maximo del content
+           accordionContent.style.height = accordionContent.scrollHeight + 'px'
+           item.classList.add('accordion-open')
+       }
+   }
+       </script> -->
+</body>
+</html> 
+
+
